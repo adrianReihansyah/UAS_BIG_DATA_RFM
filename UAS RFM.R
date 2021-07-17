@@ -1,7 +1,0 @@
-install.packages("rfm")
-install.packages("devtools")
-library ("rfm")
-data <- read.csv("C:/Users/Acer/Downloads/UAS_RFM.csv")
-date <- lubridate::as_date("2021-12-31", tz = "UTC")
-str(data)
-report <- rfm_table_order(CardID, TrxDate, Amount)
